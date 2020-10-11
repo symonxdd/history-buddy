@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Extension Options</title>
+    <link href="../css/material-components-web.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../css/options.css">
+    <script src="../js/material-components-web.min.js"></script>
+</head>
+
+<body>
+
+    <button class="mdc-button mdc-button--raised">
+        <div class="mdc-button__ripple"></div>
+        <i class="material-icons mdc-button__icon" aria-hidden="true">bookmark</i>
+        <span class="mdc-button__label">GO</span>
+    </button>
+
+
+    Favorite color:
+    <select id="color">
+        <option value="red">red</option>
+        <option value="green">green</option>
+        <option value="blue">blue</option>
+        <option value="yellow">yellow</option>
+    </select>
+
+    <label>
+        <input type="checkbox" id="like">
+        I like colors.
+    </label>
+
+    <div id="status"></div>
+    <button id="save">Save</button>
+
+    <script src="../js/options.js"></script>
+</body>
+
+</html>

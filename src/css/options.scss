@@ -1,0 +1,24 @@
+@use "@material/theme" with (
+  $primary: #FEDBD0,
+  $on-primary: #442C2E
+);
+
+@use "@material/button";
+
+@include button.core-styles;
+
+.custom-text-button,
+.custom-outlined-button {
+    @include button.ink-color(#84565e);
+}
+
+body {
+    background-color: #2c313a;
+    color: #e4e4e8;
+}
+
+.custom-text-button,
+.custom-outlined-button {
+    --mdc-theme-primary: #fedbd0;
+    --mdc-theme-on-primary: #442c2e;
+}
